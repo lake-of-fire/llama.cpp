@@ -288,6 +288,8 @@
 extern "C" {
 #endif
 
+#define GGML_MAX_NODES         16384
+
 #if defined(__ARM_NEON) && defined(__CUDACC__)
     typedef half ggml_fp16_t;
 #elif defined(__ARM_NEON)
